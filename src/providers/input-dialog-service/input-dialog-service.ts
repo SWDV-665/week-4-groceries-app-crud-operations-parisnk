@@ -11,10 +11,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class InputDialogServiceProvider {
 
+//injecting AlertController and GroceriesServiceProvider
 constructor(public alertCtrl : AlertController, public dataService : GroceriesServiceProvider) {
     console.log('Hello InputDialogServiceProvider Provider');
   }
-
+//alert box for adding or editing items
 showPrompt(item?, index?) {
   const prompt = this
     .alertCtrl
